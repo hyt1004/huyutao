@@ -29,20 +29,3 @@ npm run build
 部署地址: `https://[username].github.io/huyutao/`
 
 > 注意：首次部署需要在 GitHub 仓库设置中启用 GitHub Pages 并选择 "GitHub Actions" 作为来源。
-
-## 添加个人照片
-
-将你的照片命名为 `photo.jpg` 或 `photo.png`，放入 `public/images/` 目录。
-
-然后在 `src/app/page.tsx` 中找到头像占位符部分，将代码替换为：
-
-```tsx
-<div className="relative w-40 h-40 rounded-full overflow-hidden border-4 border-white/20">
-  <Image
-    src="/images/photo.jpg"
-    alt={personalInfo.name}
-    fill
-    className="object-cover"
-  />
-</div>
-```
